@@ -1,33 +1,39 @@
-<%= image_tag @event.image.url(:medium)%>
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @event.date %>
-</p>
-
-<p>
-  <strong>Time:</strong>
-  <%= @event.time %>
-</p>
-
-<p>
-  <strong>Venue:</strong>
-  <%= @event.venue %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @event.category %>
-</p>
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @event.image.url(:medium) %>
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><strong>Name:</strong></td>
+                <td><%= @event.name %></td>
+              </tr>
+              <tr>
+                <td><strong>Date:</strong></td>
+                <td><%= @event.date %></td>
+              </tr>
+              <tr>
+                <td><strong>Time:</strong></td>
+                <td><%= @event.time %></td>
+              </tr>
+              <tr>
+                <td><strong>Venue:</strong></td>
+                <td><%= @event.venue %></td>
+              </tr>
+              <tr>
+                <td><strong>Description:</strong></td>
+                <td><%= @event.description %></td>
+              </tr>
+              <tr>
+                <td><strong>Category:</strong></td>
+                <td><%= @event.category %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div><td></td>
