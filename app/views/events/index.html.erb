@@ -18,6 +18,7 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
+        <td><%= image_tag event.image.url(:medium)%></td>
         <td><%= event.name %></td>
         <td><%= event.date %></td>
         <td><%= event.time %></td>
